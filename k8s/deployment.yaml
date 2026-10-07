@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: data-explorer
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: data-explorer
+
+  template:
+    metadata:
+      labels:
+        app: data-explorer
+
+    spec:
+      containers:
+        - name: data-explorer
+          image: data-explorer:v2
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
