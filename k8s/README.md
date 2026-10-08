@@ -11,3 +11,4 @@ Data analyzer is a small web application for uploading and understanding CSV dat
 - Show data types
 - Run inside a Docker container
 - Deploy and manage the application with Kubernetes
+

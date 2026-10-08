@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: data-explorer
-          image: data-explorer:v2
+          image: data-explorer:v4
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
